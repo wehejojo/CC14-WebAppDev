@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="icon" href="../imgs/moment-logo.png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body class="dirt-bg h-screen w-screen">
+  <br><br>
+  <h1 class="text-[35px] mc-text text-center text-white">Skills</h1>
+  <br>
+  <div class="w-full h-[60%] overflow-hidden relative flex mt-[40px]">
+    <img src="../imgs/black-screen.png" alt="" class="absolute left-0 opacity-[0.6] w-full h-full">
+    <div class="relative border-r-white-moment border-r-2 h-full w-[50%] p-4 flex flex-col">
+      <div class="container flex flex-col w-full h-full mc-text text-white-moment justify-evenly">
+        <div class="flex justify-center items-center">
+          <div class="text-2xl">Languages</div>
+        </div>
+        <div class="flex">
+          <div class="p-[5px] text-left flex-grow px-4">Python<br>JavaScript<br>TypeScript<br>Java<br>C++<br>SQL<br>PHP<br>HTML<br>CSS<br>Rust</div>
+          <div class="p-[5px] text-right flex-grow px-4">Advanced<br>Advanced<br>Beginner<br>Intermediate<br>Beginner<br>Intermediate<br>Beginner<br>Advanced<br>Intermediate<br>Beginner</div>
+        </div>
+      </div>      
+    </div>
+    <div class="relative border-l-white-moment border-l-2 h-full w-[50%] p-4 flex flex-col">
+      <div class="container flex flex-col w-full h-full mc-text text-white-moment  justify-evenly">
+        <div class="flex justify-center items-center">
+          <div class="text-2xl">Others</div>
+        </div>
+        <div class="flex">
+          <div class="p-[5px] text-left flex-grow px-4">Data Structures & Algorithms<br>React JS<br>Node.js<br>Express JS<br>Tailwind CSS<br>Bootstrap<br>Git<br>Vim</div>
+          <div class="p-[5px] text-right flex-grow px-4">Intermediate<br>Intermediate<br>Intermediate<br>Beginner<br>Beginner<br>Beginner<br>Intermediate<br>Beginner</div>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <div class="w-[30%] h-[45px] m-[5px] border-[3px] border-black border-solid grid place-items-center stone-bg inner-border back-button" id="back">
+    <p class="mc-text text-white-moment">Back</p>
+  </div>
+  <iframe src="../audio/Mutation.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
+  <audio autoplay loop  id="playAudio"><source src="audio/source.mp3"></audio>
+  <script src="../js/pages.js"></script>
+</body>
+</html>

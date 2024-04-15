@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MOMENT</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>not a moment</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/fonts.css">
   <link rel="icon" href="./imgs/moment-logo.png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="inner loading-screen">
-      <h1 class="title">JOJANG</h1>
-      <div class="progress-bar-container">
-        <div class="progress-bar"></div>
-      </div>
+  <div class="absolute bg-red-moment text-white-moment h-screen w-screen p-[10%] flex flex-col justify-center items-center animate-[fadeOut_6s_forwards]">
+    <h1 class="text-center text-[12em] jojang">JOJANG</h1>
+    <div class="border-[3px] border-white border-solid flex items-center p-[2px] m-auto h-[30px] w-[65%]">
+      <div class="justify-self-start h-full w-[60%] bg-white animate-[loadBar_5s_ease-in-out_forwards]"></div>
+    </div>
   </div>
-  <div class="inner main-menu">
-    <div class="title-container">
-      <div class="main-title">
-        <img src="./imgs/MOMENT-3-30-2024.png" alt="">
+  <div class="absolute animate-[fadeIn_6s_forwards] h-screen w-screen p-[5%] flex flex-col items-center justify-center main-menu">
+    <div class="h-[30%] w-[70%]">
+      <div class="flex items-center justify-center">
+        <img src="./imgs/MOMENT-3-30-2024.png" alt="MEMENTO MOMENTO" class="h-[200px] w-auto" draggable="false">
       </div>
-      <div class="splash-text">CC14, The Subject of All Time</div>
+      <div class="text-yellow-moment text-[1.1em] w-[60%] text-center relative left-[50%] bottom-[50%] animate-[pulsate_500ms_infinite] mc-text z-[999]" id="splash-text">Click Me!</div>
     </div>
-    <div class="menu-buttons">
-      <div class="about"><a href="./pages/about/about.html  ">About Me</a></div>
-      <div class="skills"><a href="./pages/skills/skills.html">Skills & Specialization</a></div>
-      <div class="contact"><a href="./pages/contact/contact.html">Contact Me</a></div>
+    <div class="w-[70%] h-[60%] mt-[70px] flex flex-col items-center justify-start">
+      <div class="w-[50%] h-[45px] m-[5px] border-[3px] border-black border-solid grid place-items-center stone-bg inner-border" id="about">
+        <p class="mc-text text-white-moment">About Me</p>
+      </div>
+      <div class="w-[50%] h-[45px] m-[5px] border-[3px] border-black border-solid grid place-items-center stone-bg inner-border" id="skills">
+        <p class="mc-text text-white-moment">Skills</p>
+      </div>
+      <div class="w-[50%] h-[45px] m-[5px] border-[3px] border-black border-solid grid place-items-center stone-bg inner-border" id="contact">
+        <p class="mc-text text-white-moment">Contact</p>
+      </div>
     </div>
-    <footer>
-      <p class="left">Moment 1.0.0 (Beta)</p>
-      <p class="right">Copyright Jojang Bog. Do not check the JavaScript file!</p> 
+    <footer class="text-white-moment ">
+      <p class="absolute bottom-0 left-0 mc-text">Moment 1.0.0 (Beta)</p>
+      <p class="absolute bottom-0 right-0 mc-text">Copyright Jojang Bog. Do not check the JavaScript file!</p>
     </footer>
   </div>
+  <iframe src="./audio/Mutation.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
+  <audio autoplay loop  id="playAudio">
+    <source src="./audio/Mutation.mp3">
+  </audio>
+  <script src="./js/index.js"></script>
+  <script src="./js/pages.js"></script>
 </body>
 </html>

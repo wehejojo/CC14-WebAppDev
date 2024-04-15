@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="icon" href="../imgs/moment-logo.png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body class="dirt-bg p-[3%] h-screen w-screen">
+  <h1 class="text-[35px] mc-text text-center text-white">About Me</h1>
+  <div class="text-center h-[50%] w-full flex mt-[90px]">
+    <div class="h-full w-[50%] text-center mc-text text-white-moment flex flex-col justify-evenly">
+      <div>
+        <h1 class="text-2xl">JOHANN SEBASTIAN PHILIP V. LIWAG</h1>
+        <h4>(Programmer, Musician, Gacha Addict)</h4>
+      </div>
+      <div>
+        <h1 class="text-2xl">18 Years of Age</h1>
+        <h4>May 29, 2005</h4>
+      </div>
+      <div>
+        <h1 class="text-2xl">BS Information Technology</h1>
+        <h4>(Web Technology Track)</h4>
+      </div>
+      <div>
+        <h1 class="text-2xl">Master of Science in Computer Science</h1>
+        <h4>(Hopefully in the future)</h4>
+      </div>
+    </div>
+    <div class="h-full w-[50%] grid place-items-center">
+      <img src="../imgs/profile-pic.png" alt="ME MOMENT" class="rounded-full border-white border-2 h-[80%] w-auto">
+    </div>
+  </div>
+  <div class="w-[30%] h-[45px] m-[5px] border-[3px] border-black border-solid grid place-items-center stone-bg inner-border back-button" id="back">
+    <p class="mc-text text-white-moment">Back</p>
+  </div>
+  <iframe src="../audio/Mutation.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
+  <audio autoplay loop  id="playAudio"><source src="audio/source.mp3"></audio>
+  <script src="../js/pages.js"></script>
+</body>
+</html>
