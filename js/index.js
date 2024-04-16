@@ -10,8 +10,7 @@ const splash_text_library = [
   "Tailwind? More like Failwind",
   "flex-direction: flex-tape;",
   "rather unique set of splash texts",
-  "Math.floor(Math.random() * range);",
-  "DON'T CLICK ME I BEG OF YOU PLEASE"
+  "Math.floor(Math.random() * range);"
 ];
 
 const randomNumberGenerator = (range) => { return Math.floor(Math.random() * range); };

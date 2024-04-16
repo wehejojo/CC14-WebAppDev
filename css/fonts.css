@@ -36,13 +36,26 @@
     text-shadow: 2px 2px rgb(55, 55, 55);
 }
 .inner-border {
-    -webkit-box-shadow:inset 0px 0px 0px 2px rgb(130, 130, 130);
-    -moz-box-shadow:inset 0px 0px 0px 2px rgb(130, 130, 130);
-    box-shadow:inset 0px 0px 0px 2px rgb(130, 130, 130);
+    -webkit-box-shadow:inset 0px 0px 0px 2px rgb(142, 142, 142);
+    -moz-box-shadow:inset 0px 0px 0px 2px rgb(142, 142, 142);
+    box-shadow:inset 0px 0px 0px 2px rgb(142, 142, 142);
 }
 .back-button{
     position: absolute;
     left: 50%;
     bottom: 3%;
     transform: translate(-50%, -50%);
+}
+.black-and-white{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.inverted{
+    filter: invert(1);
+}
+.fb{
+    filter: grayscale(100%) invert(1);
+}
+.contacts:hover{
+    border: 5px solid white;
 }
